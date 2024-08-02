@@ -2,22 +2,21 @@
   <div>
     <div class="img-div" style="background-color: #f2e0c8"></div>
 
-    <div class="testimonials">
-      <b-col md="6" sm="12" fluid class="mx-auto">
-        <h6 class="sc_item_subtitle text-center">Entenda um pouco mais</h6>
-        <h2 class="title text-center">O que é a RPG Terapia?</h2>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/ETYlpjRwad4?si=a3h_2sesszHH0Nhe"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </b-col>
-      <b-col md="8" fluid class="mx-auto mt-5">
+    <div class="testimonials pb-5">
+      <h6 class="sc_item_subtitle text-center">Grupos Terapêuticos</h6>
+      <b-col md="8" fluid class="mx-auto">
+        <div class="mb-5">
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.youtube.com/embed/jFUH87FAj94?si=7NtXEz8ZrDe1Zfl0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
         <h6 class="sc_item_subtitle text-center">Depoimentos</h6>
         <h2 class="title text-center">
           Veja o que diz quem já passou pela experiência
@@ -37,9 +36,6 @@
           >
             <b-container class="text-testimonial">
               <span class="font-italic"> "{{ item.text }}" </span>
-              <p class="text-right">
-                <span class="font-italic">{{ item.name }}</span>
-              </p>
             </b-container>
           </swiper-slide>
         </swiper-container>

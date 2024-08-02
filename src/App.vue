@@ -20,29 +20,30 @@
         </nav>
 
         <div class="textHeader">
-          <p>Bem Vindo a</p>
+          <p>Bem Vindo à</p>
           <img src="../public/img/Logo-Branco-1024x593.png" />
           <b-container>
             <p>
-              Descubra como os jogos de RPG podem transformar sua vida, e
-              explorar seu potencial em um ambiente seguro e divertido.
+              Descubra como uma psicoterapia gamificada com jogos de RPG pode
+              transformar sua vida e explorar seu potencial.
             </p>
           </b-container>
         </div>
       </div>
 
       <router-view />
-      <FooterHome msg="Welcome to Your Vue.js + TypeScript App" />
+      <SectionSeven />
     </b-container>
   </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
-import FooterHome from "@/components/FooterHome.vue"; // @ is an alias to /src
+import SectionSeven from "@/components/SectionSeven.vue";
+
 export default Vue.extend({
   name: "HomeView",
   components: {
-    FooterHome,
+    SectionSeven,
   },
 });
 </script>
@@ -87,12 +88,12 @@ nav a.router-link-exact-active {
   color: #f2e0c8;
   font-family: "Spectral SC", serif;
   font-size: 50px;
-  margin-top: 200px;
+  margin-top: 35px;
 }
 
 .textHeader img {
   max-width: 100%;
-  width: 20%;
+  width: 35%;
 }
 
 #app .bg-dark {

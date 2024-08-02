@@ -10,7 +10,16 @@
             <div class="text">
               <h2>Investimento</h2>
               <p>
-                O valor é de R$495 no plano mensal para a psicoterapia em grupo.
+                De:
+                <span style="text-decoration: line-through">R$ 600</span> por
+                mês<br />
+                Por apenas:
+                <span style="font-size: 40px; color: #f2e0c8">R$ 49,90</span>
+              </p>
+              <p style="font-style: italic">
+                Esse valor é da sessão experimental. Caso você goste da
+                experiência e queira seguir no processo o valor é de apenas R$
+                395 no plano mensal
               </p>
               <h2>Horário</h2>
               <p>
@@ -24,20 +33,10 @@
                 das sessões. Não são one-shots. Em cada sessão, a aventura é
                 retomada.
               </p>
-              <h2 class="mt-5">Confira mais detalhes no vídeo abaixo</h2>
-              <div>
-                <iframe
-                  width="100%"
-                  height="450"
-                  src="https://www.youtube.com/embed/jFUH87FAj94?si=7NtXEz8ZrDe1Zfl0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
             </div>
+          </div>
+          <div class="mt-5">
+            <ButtonCAT />
           </div>
         </b-col>
       </b-row>
@@ -47,9 +46,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import ButtonCAT from "@/components/ButtonCAT.vue";
 
 export default Vue.extend({
   name: "WhoIsHome",
+  components: {
+    ButtonCAT,
+  },
   props: {
     msg: String,
   },

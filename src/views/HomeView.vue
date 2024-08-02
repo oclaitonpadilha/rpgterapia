@@ -1,28 +1,28 @@
 <template>
   <div class="home">
-    <WelcomeHome msg="Welcome to Your Vue.js + TypeScript App" />
-    <AboutHome msg="Welcome to Your Vue.js + TypeScript App" />
-    <TestimonialsHome msg="Welcome to Your Vue.js + TypeScript App" />
-    <WhoIsHome msg="Welcome to Your Vue.js + TypeScript App" />
-    <JoinHome msg="Welcome to Your Vue.js + TypeScript App" />
+    <HeaderHome />
+    <SectionTwo />
+    <TestimonialsHome />
+    <SessionSix />
+    <JoinHome />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import WelcomeHome from "@/components/WelcomeHome.vue"; // @ is an alias to /src
-import AboutHome from "@/components/AboutHome.vue"; // @ is an alias to /src
+import HeaderHome from "@/components/HeaderHome.vue"; // @ is an alias to /src
+import SectionTwo from "@/components/SectionTwo.vue"; // @ is an alias to /src
 import TestimonialsHome from "@/components/TestimonialsHome.vue"; // @ is an alias to /src
 
-import WhoIsHome from "@/components/WhoIsHome.vue"; // @ is an alias to /src
+import SessionSix from "@/components/SectionSix.vue"; // @ is an alias to /src
 import JoinHome from "@/components/JoinHome.vue"; // @ is an alias to /src
 export default Vue.extend({
   name: "HomeView",
   components: {
-    WelcomeHome,
-    AboutHome,
+    HeaderHome,
+    SectionTwo,
     TestimonialsHome,
-    WhoIsHome,
+    SessionSix,
     JoinHome,
   },
   data() {
